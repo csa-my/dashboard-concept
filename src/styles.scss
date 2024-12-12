@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+// https://stackoverflow.com/questions/51945107/angular-material-mat-drawer-in-full-height-flex-content-overflow-auto
+.mat-drawer-inner-container {
+  overflow: hidden !important;
+}

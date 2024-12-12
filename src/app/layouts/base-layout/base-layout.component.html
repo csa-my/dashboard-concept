@@ -11,13 +11,12 @@
   </mat-sidenav>
 
   <mat-sidenav-content class="contentWrapper" #content>
-    <mat-toolbar class="topbar">
-      <div class="body-wrapper">
-        <main class="pageWrapper maxWidth">
-          <p>Test</p>
-          <router-outlet></router-outlet>
-        </main>
-      </div>
-    </mat-toolbar>
+    <app-header></app-header>
+    <div class="body-wrapper">
+      <main class="pageWrapper maxWidth">
+        <!-- <p>Test</p> -->
+        <router-outlet></router-outlet>
+      </main>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
