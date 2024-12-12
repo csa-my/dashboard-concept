@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { navItems } from '@layouts/data/nav-items';
 import { MaterialModule } from '@modules/material.module';
 
 @Component({
@@ -11,4 +12,5 @@ import { MaterialModule } from '@modules/material.module';
 })
 export class BaseLayoutComponent {
   opened = false;
+  navItems = navItems;
 }
