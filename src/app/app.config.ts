@@ -4,7 +4,7 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideHttpClient, withFetch, withInterceptorsFromDi } from '@angular/common/http';
-import { MaterialModule } from '@app/material.module';
+import { MaterialModule } from './material.module';
 
 export const appConfig: ApplicationConfig = {
   providers: [
