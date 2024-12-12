@@ -1,9 +1,10 @@
 <mat-sidenav-container class="mainWrapper blue_theme light-theme" autosize autoFocus dir="ltr">
   <mat-sidenav #sidenav mode="side" [opened]="true" class="sidenav">
+    <app-sidebar (toggleMobileNav)="sidenav.toggle()"></app-sidebar>
     <div class="flex-layout">
       <mat-nav-list class="sidebar-list">
         @for(item of navItems; track item) {
-            <span class="menu-text">{{ item.displayName }}</span>
+        <span class="menu-text">{{ item.displayName }}</span>
         }
       </mat-nav-list>
     </div>
