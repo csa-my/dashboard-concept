@@ -5,6 +5,7 @@ import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
 import { provideHttpClient, withFetch, withInterceptorsFromDi } from '@angular/common/http';
 import { MaterialModule } from './modules/material.module';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -15,5 +16,6 @@ export const appConfig: ApplicationConfig = {
     importProvidersFrom(
       MaterialModule
     ),
+    provideAnimations()
   ],
 };
